@@ -1,0 +1,745 @@
+{
+	"info": {
+		"_postman_id": "34e97177-a2cd-49d4-a871-3964ad5ce5e0",
+		"name": "tb_corporate_portal",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "client",
+			"item": [
+				{
+					"name": "api/client/test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/test",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"test"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"name\": \"abdul\",\n            \"fri\": \"1\",\n            \"seller_code\": \"1\",\n            \"address\": \"1\",\n            \"city\": \"1\",\n            \"ntn\": \"1\",\n            \"agreement_date\": null,\n            \"pricing\": \"1\",\n            \"uploaders\": 0,\n            \"executors\": 0,\n            \"approvers\": 0\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/add",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"add"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\t\t\"id\":3,\n            \"name\": \"Object is updated\",\n            \"fri\": \"1\",\n            \"seller_code\": \"1\",\n            \"address\": \"1\",\n            \"city\": \"1\",\n            \"ntn\": \"1\",\n            \"agreement_date\": null,\n            \"pricing\": \"1\",\n            \"uploaders\": 0,\n            \"executors\": 0,\n            \"approvers\": 0\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/update",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"update"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/search",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"name\": \"abdulrehman1\",\n            \"address\": \"yes1\",\n            \"city\": \"ye1s\"\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/search",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"search"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/get/all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/get/all",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"get",
+								"all"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/get/4",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"get",
+								"4"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/client/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/client/delete/3",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"client",
+								"delete",
+								"3"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "api/user/test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/test",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"test"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"first_name\": \"Abdul\",\n            \"last_name\": \"Rehman Awal-111\",\n            \"cnic\": \"1212121`\",\n            \"location\": \"Burewala\",\n            \"email\": \"ab@a.com\",\n            \"role_id\": \"1\",\n            \"created_by\": null,\n            \"modified_by\": null,\n            \"deleted\": false,\n            \"active\": false,\n            \"user_limit\": null,\n            \"level\": 2,\n            \"created_date\": null,\n            \"modified_date\": null\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/add",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"add"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n            \"id\": 6,\n            \"first_name\": \"Abdul\",\n            \"last_name\": \"Rehman - Awalllll---======\",\n            \"cnic\": \"1212121`\",\n            \"location\": \"Burewala\",\n            \"email\": \"a@a.com\",\n            \"role_id\": \"1\",\n            \"created_by\": null,\n            \"modified_by\": null,\n            \"deleted\": false,\n            \"active\": false,\n            \"user_limit\": null,\n            \"level\": 0,\n            \"created_date\": null,\n            \"modified_date\": null\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/update",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"update"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/search",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": " {\n            \"first_name\": \"Abdul\",\n            \"last_name\": \"Rehman Awal-11\",\n            \"cnic\": \"12121211`\",\n            \"email\": \"ab@a.com\"\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/search",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"search"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/get/all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/get/all",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"get",
+								"all"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/get/6",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"get",
+								"6"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/user/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/delete/6",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"delete",
+								"6"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "role",
+			"item": [
+				{
+					"name": "api/role/test",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/user/test",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"user",
+								"test"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/role/add",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n            \"name\": \"Cashier\"\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/role/add",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"role",
+								"add"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/role/update",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "959043.8205609098"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "password",
+								"value": "zigron123",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "  {\n  \t\t\t\"id\":1,\n            \"name\": \"Executor-1\"\n        }"
+						},
+						"url": {
+							"raw": "{{address}}{{base_url}}/role/update",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"role",
+								"update"
+							]
+						},
+						"description": "Add latest accesstoken"
+					},
+					"response": []
+				},
+				{
+					"name": "/role/get/all",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/role/get/all",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"role",
+								"get",
+								"all"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/role/get/{id}",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/role/get/1",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"role",
+								"get",
+								"1"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				},
+				{
+					"name": "/role/delete/{id}",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							},
+							{
+								"key": "clientId",
+								"value": "abdul.rehman@zigron.com"
+							},
+							{
+								"key": "Authorization",
+								"value": "1764946.968536824"
+							}
+						],
+						"url": {
+							"raw": "{{address}}{{base_url}}/role/delete/2",
+							"host": [
+								"{{address}}{{base_url}}"
+							],
+							"path": [
+								"role",
+								"delete",
+								"2"
+							]
+						},
+						"description": "Adds project account to user profile, if project is added already then will update it on domain and name base"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
